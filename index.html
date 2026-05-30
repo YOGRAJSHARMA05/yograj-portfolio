@@ -1,0 +1,907 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Yograj Sharma | Computer Science & Engineering Portfolio</title>
+  
+  <!-- SEO Meta Tags -->
+  <meta name="description" content="Portfolio of Yograj Sharma, a highly enthusiastic Computer Science & Engineering student, developer, innovator, and leader. Discover technical projects, research papers, and achievements.">
+  <meta name="keywords" content="Yograj Sharma, SRM Institute of Science and Technology, Computer Science, CSE, Developer, Leader, Artist, Portfolio, Web Development, Machine Learning">
+  <meta name="author" content="Yograj Sharma">
+  
+  <!-- FontAwesome for Premium Icons -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+  
+  <!-- Custom Stylesheet -->
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+  <!-- ==========================================================================
+       LOADING SCREEN
+       ========================================================================== -->
+  <div id="loader-screen">
+    <div class="loader-logo">
+      YOGRAJ<span class="text-accent">.</span>
+    </div>
+    <div class="loader-bar-bg">
+      <div class="loader-bar" id="loader-bar"></div>
+    </div>
+  </div>
+
+  <!-- ==========================================================================
+       HEADER & NAVIGATION
+       ========================================================================== -->
+  <header class="header" id="header">
+    <div class="container nav-container">
+      <a href="#home" class="logo" id="logo-nav">
+        Yograj<span class="logo-dot"></span>
+      </a>
+      
+      <nav class="nav-links" id="nav-links-menu">
+        <a href="#home" class="nav-link active" id="link-home">Home</a>
+        <a href="#about" class="nav-link" id="link-about">About</a>
+        <a href="#education" class="nav-link" id="link-education">Education</a>
+        <a href="#skills" class="nav-link" id="link-skills">Skills</a>
+        <a href="#projects" class="nav-link" id="link-projects">Projects</a>
+        <a href="#research" class="nav-link" id="link-research">Research</a>
+        <a href="#achievements" class="nav-link" id="link-achievements">Achievements</a>
+        <a href="#contact" class="nav-cta" id="link-contact">Contact Me</a>
+      </nav>
+      
+      <button class="mobile-menu-btn" id="mobile-toggle" aria-label="Toggle Menu">
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+    </div>
+  </header>
+
+  <!-- ==========================================================================
+       HERO SECTION
+       ========================================================================== -->
+  <section class="hero" id="home">
+    <div class="bg-glow" style="top: -100px; left: -100px;"></div>
+    <div class="bg-glow" style="bottom: -100px; right: -100px;"></div>
+    
+    <!-- Floating Technology Background Decoration -->
+    <div class="floating-tech-icons">
+      <div class="tech-icon-float tf-1" title="C++"><i class="fa-solid fa-code text-accent"></i></div>
+      <div class="tech-icon-float tf-2" title="Python"><i class="fa-brands fa-python" style="color: #3776AB;"></i></div>
+      <div class="tech-icon-float tf-3" title="Java"><i class="fa-brands fa-java" style="color: #ED8B00;"></i></div>
+      <div class="tech-icon-float tf-4" title="MySQL"><i class="fa-solid fa-database" style="color: #00758F;"></i></div>
+      <div class="tech-icon-float tf-5" title="Web Dev"><i class="fa-brands fa-js" style="color: #F7DF1E;"></i></div>
+      <div class="tech-icon-float tf-6" title="Linux"><i class="fa-brands fa-linux" style="color: #333333;"></i></div>
+    </div>
+    
+    <div class="container">
+      <div class="hero-grid">
+        <div class="hero-content">
+          <div class="hero-intro">Welcome to my space</div>
+          <h1 class="hero-title">Hi, I'm Yograj Sharma</h1>
+          
+          <div class="hero-tagline">
+            <span class="hero-tagline-text" id="typing-tagline"></span>
+          </div>
+          
+          <p class="hero-desc">
+            A passionate Computer Science & Engineering student at SRM Institute of Science and Technology who loves building technology solutions, leading teams, solving real-world problems, and exploring creativity through arts and performance.
+          </p>
+          
+          <div class="hero-buttons">
+            <a href="#projects" class="btn btn-primary" id="btn-hero-projects">
+              View Projects <i class="fa-solid fa-arrow-right"></i>
+            </a>
+            <a href="#contact" class="btn btn-secondary" id="btn-hero-contact">
+              Contact Me <i class="fa-regular fa-envelope"></i>
+            </a>
+            <a href="#" class="btn-link" id="btn-hero-resume" onclick="alert('Resume download is simulated! Integrate your PDF here.'); return false;">
+              Download Resume <i class="fa-solid fa-download"></i>
+            </a>
+          </div>
+        </div>
+        
+        <div class="hero-image-wrapper">
+          <div class="decor-1 hero-image-decor"></div>
+          <div class="decor-2 hero-image-decor"></div>
+          <div class="hero-image-circle">
+            <!-- Checking for user image; falls back gracefully to a premium CSS placeholder if profile.jpg doesn't exist -->
+            <img src="assets/profile.jpg" alt="Yograj Sharma" class="hero-profile-img" onerror="this.style.display='none'; document.getElementById('avatar-fallback').style.display='flex';">
+            
+            <div class="avatar-placeholder" id="avatar-fallback" style="display: none;">
+              <svg viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg">
+                <circle cx="50" cy="38" r="18" fill="none" stroke="currentColor" stroke-width="4.5" />
+                <path d="M22,78 C22,60 32,53 50,53 C68,53 78,60 78,78" fill="none" stroke="currentColor" stroke-width="4.5" stroke-linecap="round" />
+              </svg>
+              <div class="avatar-placeholder-text">Y S</div>
+              <div class="avatar-placeholder-tag">&lt; CSE Student /&gt;</div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ==========================================================================
+       ABOUT ME SECTION
+       ========================================================================== -->
+  <section class="section-padding reveal" id="about">
+    <div class="container">
+      <div class="section-header">
+        <span class="badge"><i class="fa-solid fa-user-tie"></i> Introduction</span>
+        <h2>About Me</h2>
+        <p>Combining technological innovation with creative performance to build solutions that matter.</p>
+      </div>
+      
+      <div class="about-grid">
+        <div class="about-image-wrapper">
+          <div class="about-image-card">
+            <img src="assets/about_profile.jpg" alt="Yograj Sharma" class="about-img" onerror="this.parentElement.style.display='none';">
+            <div class="about-image-badge">
+              <i class="fa-solid fa-laptop-code"></i> CSE student
+            </div>
+          </div>
+        </div>
+        
+        <div class="about-content">
+          <div class="about-text">
+            <div class="about-highlight">
+              "I believe in combining technology with creativity to build impactful solutions that can positively influence society."
+            </div>
+            <p>
+              I am a highly enthusiastic and motivated Computer Science and Engineering student at SRM Institute of Science and Technology. I enjoy learning new technologies, developing innovative software solutions, and working collaboratively in team environments.
+            </p>
+            <p>
+              My strengths include leadership, teamwork, problem-solving, communication, adaptability, and creativity. Alongside my technical journey, I have actively participated in hackathons, research projects, community programs, and extracurricular activities.
+            </p>
+          </div>
+          
+          <div class="about-details-grid">
+            <div class="about-info-card">
+              <h4><i class="fa-solid fa-graduation-cap"></i> SRM IST</h4>
+              <p>B.Tech in Computer Science and Engineering. Deeply involved in research and technical clubs.</p>
+            </div>
+            <div class="about-info-card">
+              <h4><i class="fa-solid fa-users"></i> Leadership</h4>
+              <p>Proven abilities to guide hackathon teams and drive collaborative university projects.</p>
+            </div>
+            <div class="about-info-card">
+              <h4><i class="fa-solid fa-palette"></i> Arts & Culture</h4>
+              <p>Holder of professional diplomas in dance, fine arts, and tabla, blending analytical thinking with artistic expression.</p>
+            </div>
+            <div class="about-info-card">
+              <h4><i class="fa-solid fa-globe"></i> Community</h4>
+              <p>Dedicated volunteer participating in outreach and flood relief programs to support society.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ==========================================================================
+       EDUCATION & TIMELINE SECTION
+       ========================================================================== -->
+  <section class="section-padding timeline-section" id="education">
+    <div class="container">
+      <div class="section-header">
+        <span class="badge"><i class="fa-solid fa-route"></i> Roadmap</span>
+        <h2>Education & Journey</h2>
+        <p>My academic path, hackathon experiences, and key participations over the years.</p>
+      </div>
+      
+      <div class="timeline-wrapper">
+        <div class="timeline-line"></div>
+        
+        <!-- Timeline Item 1 -->
+        <div class="timeline-item timeline-item-left reveal">
+          <div class="timeline-badge"></div>
+          <div class="timeline-content">
+            <span class="timeline-date">2023 - Present</span>
+            <h3>SRM Institute of Science and Technology</h3>
+            <h4>Bachelor of Technology (B.Tech) - Computer Science & Engineering</h4>
+            <p>Currently pursuing deep specializations in Algorithms, Web Systems, Machine Learning, and IoT frameworks. Actively writing research papers and organizing community outreach.</p>
+            <div class="timeline-tags">
+              <span class="timeline-tag">CGPA: Excellent</span>
+              <span class="timeline-tag">Research</span>
+              <span class="timeline-tag">Leadership</span>
+            </div>
+          </div>
+        </div>
+        
+        <!-- Timeline Item 2 -->
+        <div class="timeline-item timeline-item-right reveal">
+          <div class="timeline-badge"></div>
+          <div class="timeline-content">
+            <span class="timeline-date">Participated</span>
+            <h3>Multiple Hackathons</h3>
+            <h4>Technical Innovation & Prototyping</h4>
+            <p>Formed and led dynamic teams, designing smart systems like AI-based API security monitors and emergency services under high pressure timelines.</p>
+            <div class="timeline-tags">
+              <span class="timeline-tag">API Monitor</span>
+              <span class="timeline-tag">AI/ML</span>
+              <span class="timeline-tag">Team Lead</span>
+            </div>
+          </div>
+        </div>
+        
+        <!-- Timeline Item 3 -->
+        <div class="timeline-item timeline-item-left reveal">
+          <div class="timeline-badge"></div>
+          <div class="timeline-content">
+            <span class="timeline-date">Prior Education</span>
+            <h3>Spring Dale International School</h3>
+            <h4>Senior Secondary Education</h4>
+            <p>Completed higher secondary education with a rigorous focus on science, mathematics, and computer applications. Developed a strong technical foundation.</p>
+            <div class="timeline-tags">
+              <span class="timeline-tag">Physics</span>
+              <span class="timeline-tag">Mathematics</span>
+              <span class="timeline-tag">Computer Science</span>
+            </div>
+          </div>
+        </div>
+        
+        <!-- Timeline Item 4 -->
+        <div class="timeline-item timeline-item-right reveal">
+          <div class="timeline-badge"></div>
+          <div class="timeline-content">
+            <span class="timeline-date">Secondary Education</span>
+            <h3>Kendriya Vidyalaya Mangaldai</h3>
+            <h4>Secondary Schooling</h4>
+            <p>Received broad educational foundations, excelling in regional technical competitions, youth leadership platforms, and physical sports events.</p>
+            <div class="timeline-tags">
+              <span class="timeline-tag">Science Fair</span>
+              <span class="timeline-tag">Sports</span>
+              <span class="timeline-tag">KV Culture</span>
+            </div>
+          </div>
+        </div>
+        
+      </div>
+    </div>
+  </section>
+
+  <!-- ==========================================================================
+       TECHNICAL SKILLS SECTION
+       ========================================================================== -->
+  <section class="section-padding reveal" id="skills">
+    <div class="container">
+      <div class="section-header">
+        <span class="badge"><i class="fa-solid fa-laptop-code"></i> Toolkit</span>
+        <h2>Technical Expertise</h2>
+        <p>My structured expertise in programming systems, web technologies, database management, and emerging fields.</p>
+      </div>
+      
+      <div class="skills-grid">
+        <!-- Programming Languages -->
+        <div class="skills-category">
+          <h3><i class="fa-solid fa-terminal"></i> Programming Languages</h3>
+          <div class="skill-list">
+            <div class="skill-item">
+              <div class="skill-info">
+                <span class="skill-name"><i class="fa-solid fa-code text-accent"></i> C++</span>
+                <span class="skill-percent">90%</span>
+              </div>
+              <div class="skill-bar-bg">
+                <div class="skill-bar" data-percent="90%"></div>
+              </div>
+            </div>
+            
+            <div class="skill-item">
+              <div class="skill-info">
+                <span class="skill-name"><i class="fa-brands fa-python" style="color: #3776AB;"></i> Python</span>
+                <span class="skill-percent">85%</span>
+              </div>
+              <div class="skill-bar-bg">
+                <div class="skill-bar" data-percent="85%"></div>
+              </div>
+            </div>
+            
+            <div class="skill-item">
+              <div class="skill-info">
+                <span class="skill-name"><i class="fa-brands fa-java" style="color: #ED8B00;"></i> Java</span>
+                <span class="skill-percent">80%</span>
+              </div>
+              <div class="skill-bar-bg">
+                <div class="skill-bar" data-percent="80%"></div>
+              </div>
+            </div>
+            
+            <div class="skill-item">
+              <div class="skill-info">
+                <span class="skill-name"><i class="fa-solid fa-c"></i> C Language</span>
+                <span class="skill-percent">85%</span>
+              </div>
+              <div class="skill-bar-bg">
+                <div class="skill-bar" data-percent="85%"></div>
+              </div>
+            </div>
+          </div>
+        </div>
+        
+        <!-- Web Development -->
+        <div class="skills-category">
+          <h3><i class="fa-solid fa-globe"></i> Web Development</h3>
+          <div class="skill-list">
+            <div class="skill-item">
+              <div class="skill-info">
+                <span class="skill-name"><i class="fa-brands fa-html5" style="color: #E34F26;"></i> HTML5</span>
+                <span class="skill-percent">95%</span>
+              </div>
+              <div class="skill-bar-bg">
+                <div class="skill-bar" data-percent="95%"></div>
+              </div>
+            </div>
+            
+            <div class="skill-item">
+              <div class="skill-info">
+                <span class="skill-name"><i class="fa-brands fa-css3-alt" style="color: #1572B6;"></i> CSS3 & Layouts</span>
+                <span class="skill-percent">90%</span>
+              </div>
+              <div class="skill-bar-bg">
+                <div class="skill-bar" data-percent="90%"></div>
+              </div>
+            </div>
+            
+            <div class="skill-item">
+              <div class="skill-info">
+                <span class="skill-name"><i class="fa-brands fa-js" style="color: #F7DF1E;"></i> JavaScript (ES6+)</span>
+                <span class="skill-percent">85%</span>
+              </div>
+              <div class="skill-bar-bg">
+                <div class="skill-bar" data-percent="85%"></div>
+              </div>
+            </div>
+          </div>
+        </div>
+        
+        <!-- Database & Systems -->
+        <div class="skills-category">
+          <h3><i class="fa-solid fa-server"></i> Database & Systems</h3>
+          <div class="skill-list">
+            <div class="skill-item">
+              <div class="skill-info">
+                <span class="skill-name"><i class="fa-solid fa-database" style="color: #00758F;"></i> MySQL</span>
+                <span class="skill-percent">80%</span>
+              </div>
+              <div class="skill-bar-bg">
+                <div class="skill-bar" data-percent="80%"></div>
+              </div>
+            </div>
+            
+            <div class="skill-item">
+              <div class="skill-info">
+                <span class="skill-name"><i class="fa-brands fa-linux" style="color: #333333;"></i> Linux</span>
+                <span class="skill-percent">75%</span>
+              </div>
+              <div class="skill-bar-bg">
+                <div class="skill-bar" data-percent="75%"></div>
+              </div>
+            </div>
+            
+            <div class="skill-item">
+              <div class="skill-info">
+                <span class="skill-name"><i class="fa-solid fa-gears"></i> Operating Systems Fundamentals</span>
+                <span class="skill-percent">80%</span>
+              </div>
+              <div class="skill-bar-bg">
+                <div class="skill-bar" data-percent="80%"></div>
+              </div>
+            </div>
+          </div>
+        </div>
+        
+        <!-- Areas of Interest -->
+        <div class="skills-category">
+          <h3><i class="fa-solid fa-lightbulb"></i> Areas of Interest</h3>
+          <p style="margin-bottom: 1.5rem; color: var(--text-muted);">Key specializations I actively focus on during academic research and project development:</p>
+          <div class="interests-container">
+            <span class="interest-tag"><i class="fa-solid fa-brain"></i> Artificial Intelligence</span>
+            <span class="interest-tag"><i class="fa-solid fa-microchip"></i> Machine Learning</span>
+            <span class="interest-tag"><i class="fa-solid fa-sitemap"></i> Data Structures & Algorithms</span>
+            <span class="interest-tag"><i class="fa-solid fa-network-wired"></i> IoT Frameworks</span>
+            <span class="interest-tag"><i class="fa-solid fa-heart-pulse"></i> Human Health Analytics</span>
+            <span class="interest-tag"><i class="fa-solid fa-laptop-code"></i> Software Development</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ==========================================================================
+       PROJECTS SECTION
+       ========================================================================== -->
+  <section class="section-padding projects-section" id="projects">
+    <div class="container">
+      <div class="section-header reveal">
+        <span class="badge"><i class="fa-solid fa-cubes"></i> Portfolio</span>
+        <h2>Featured Projects</h2>
+        <p>A handpicked selection of key innovations built using hardware, artificial intelligence, and software frameworks.</p>
+      </div>
+      
+      <div class="projects-grid">
+        
+        <!-- Project 1 -->
+        <div class="project-card reveal">
+          <div class="project-image-container">
+            <div class="project-demo-pattern"></div>
+            <div class="project-mockup">
+              <div class="project-mock-header">
+                <div class="project-mock-dot"></div>
+                <div class="project-mock-dot"></div>
+                <div class="project-mock-dot"></div>
+              </div>
+              <div class="project-mock-body">
+                <i class="fa-solid fa-brain project-mock-icon"></i>
+                <div class="project-mock-title">mri_tumor_analysis.py</div>
+              </div>
+            </div>
+          </div>
+          <div class="project-content">
+            <h3 class="project-title">Brain Tumor Detection System</h3>
+            <p class="project-desc">
+              Machine learning and image processing-based system for detecting and segmentation of brain tumors from raw MRI images with high accuracy.
+            </p>
+            <div class="project-tags">
+              <span class="project-tag">Python</span>
+              <span class="project-tag">Machine Learning</span>
+              <span class="project-tag">Computer Vision</span>
+              <span class="project-tag">Healthcare IT</span>
+            </div>
+            <div class="project-actions">
+              <a href="#" class="project-btn project-btn-primary" onclick="alert('Simulated Live Demo loaded!'); return false;"><i class="fa-solid fa-arrow-up-right-from-square"></i> Live Demo</a>
+              <a href="#" class="project-btn" onclick="alert('GitHub Repository Link simulated!'); return false;"><i class="fa-brands fa-github"></i> GitHub</a>
+            </div>
+          </div>
+        </div>
+        
+        <!-- Project 2 -->
+        <div class="project-card reveal">
+          <div class="project-image-container">
+            <div class="project-demo-pattern"></div>
+            <div class="project-mockup">
+              <div class="project-mock-header">
+                <div class="project-mock-dot"></div>
+                <div class="project-mock-dot"></div>
+                <div class="project-mock-dot"></div>
+              </div>
+              <div class="project-mock-body">
+                <i class="fa-solid fa-hand-holding-hand project-mock-icon" style="color: #10B981;"></i>
+                <div class="project-mock-title">sign_to_speech_engine</div>
+              </div>
+            </div>
+          </div>
+          <div class="project-content">
+            <h3 class="project-title">Sign Language to Speech Translator</h3>
+            <p class="project-desc">
+              AI-powered real-time utility that converts dynamic hand gesture coordinates into natural human speech using computer vision models.
+            </p>
+            <div class="project-tags">
+              <span class="project-tag">AI/Deep Learning</span>
+              <span class="project-tag">OpenCV</span>
+              <span class="project-tag">TTS Engine</span>
+            </div>
+            <div class="project-actions">
+              <a href="#" class="project-btn project-btn-primary" onclick="alert('Simulated Live Demo loaded!'); return false;"><i class="fa-solid fa-arrow-up-right-from-square"></i> Live Demo</a>
+              <a href="#" class="project-btn" onclick="alert('GitHub Repository Link simulated!'); return false;"><i class="fa-brands fa-github"></i> GitHub</a>
+            </div>
+          </div>
+        </div>
+        
+        <!-- Project 3 -->
+        <div class="project-card reveal">
+          <div class="project-image-container">
+            <div class="project-demo-pattern"></div>
+            <div class="project-mockup">
+              <div class="project-mock-header">
+                <div class="project-mock-dot"></div>
+                <div class="project-mock-dot"></div>
+                <div class="project-mock-dot"></div>
+              </div>
+              <div class="project-mock-body">
+                <i class="fa-solid fa-shield-halved project-mock-icon" style="color: #EF4444;"></i>
+                <div class="project-mock-title">api_watchdog_dashboard</div>
+              </div>
+            </div>
+          </div>
+          <div class="project-content">
+            <h3 class="project-title">API Call Analysis & Alert System</h3>
+            <p class="project-desc">
+              Robust security dashboard developed for hackathon participation using AI-driven logs analysis to detect anomalies and trigger quick alerts.
+            </p>
+            <div class="project-tags">
+              <span class="project-tag">Cybersecurity</span>
+              <span class="project-tag">Node.js</span>
+              <span class="project-tag">Anomalies</span>
+              <span class="project-tag">Hackathon</span>
+            </div>
+            <div class="project-actions">
+              <a href="#" class="project-btn project-btn-primary" onclick="alert('Simulated Live Demo loaded!'); return false;"><i class="fa-solid fa-arrow-up-right-from-square"></i> Live Demo</a>
+              <a href="#" class="project-btn" onclick="alert('GitHub Repository Link simulated!'); return false;"><i class="fa-brands fa-github"></i> GitHub</a>
+            </div>
+          </div>
+        </div>
+        
+        <!-- Project 4 -->
+        <div class="project-card reveal">
+          <div class="project-image-container">
+            <div class="project-demo-pattern"></div>
+            <div class="project-mockup">
+              <div class="project-mock-header">
+                <div class="project-mock-dot"></div>
+                <div class="project-mock-dot"></div>
+                <div class="project-mock-dot"></div>
+              </div>
+              <div class="project-mock-body">
+                <i class="fa-solid fa-bolt project-mock-icon" style="color: #F59E0B;"></i>
+                <div class="project-mock-title">smart_meter_iot</div>
+              </div>
+            </div>
+          </div>
+          <div class="project-content">
+            <h3 class="project-title">IoT-Based Energy Meter Monitoring</h3>
+            <p class="project-desc">
+              Smart hardware monitoring solution for tracking domestic electrical consumption and streaming real-time metrics over IoT dashboards.
+            </p>
+            <div class="project-tags">
+              <span class="project-tag">IoT</span>
+              <span class="project-tag">Microcontrollers</span>
+              <span class="project-tag">Energy Analytics</span>
+            </div>
+            <div class="project-actions">
+              <a href="#" class="project-btn project-btn-primary" onclick="alert('Simulated Live Demo loaded!'); return false;"><i class="fa-solid fa-arrow-up-right-from-square"></i> Live Demo</a>
+              <a href="#" class="project-btn" onclick="alert('GitHub Repository Link simulated!'); return false;"><i class="fa-brands fa-github"></i> GitHub</a>
+            </div>
+          </div>
+        </div>
+        
+      </div>
+    </div>
+  </section>
+
+  <!-- ==========================================================================
+       RESEARCH & ACADEMIC WORK SECTION
+       ========================================================================== -->
+  <section class="section-padding reveal" id="research">
+    <div class="container">
+      <div class="section-header">
+        <span class="badge"><i class="fa-solid fa-book-open"></i> Publications</span>
+        <h2>Research & Academic Work</h2>
+        <p>My contributions to healthcare analytics and predictive modeling using digital datasets.</p>
+      </div>
+      
+      <div class="research-grid">
+        <!-- Research 1 -->
+        <div class="research-card reveal-left">
+          <span class="research-type">Research Paper</span>
+          <h3 class="research-title">Predictive Analytics for Cardiovascular Diseases</h3>
+          <div class="research-journal"><i class="fa-regular fa-newspaper"></i> Academic Research Study</div>
+          <p class="research-desc">
+            Leveraged machine learning pipelines to ingest clinical history datasets and identify early-onset indicators for cardiovascular risk. Achieved outstanding classification validation markers.
+          </p>
+          <div class="timeline-tags">
+            <span class="timeline-tag">Python</span>
+            <span class="timeline-tag">Scikit-Learn</span>
+            <span class="timeline-tag">Clinical Datasets</span>
+            <span class="timeline-tag">Predictive Analytics</span>
+          </div>
+        </div>
+        
+        <!-- Research 2 -->
+        <div class="research-card reveal-right">
+          <span class="research-type">Research Work</span>
+          <h3 class="research-title">Sudden Arrhythmic Death Syndrome (SADS) Detection</h3>
+          <div class="research-journal"><i class="fa-solid fa-microscope"></i> MIT-BIH Arrhythmia Dataset Analysis</div>
+          <p class="research-desc">
+            Engineered computational filters to extract crucial ECG wave anomalies linked to Sudden Arrhythmic Death Syndrome, processing extensive data patterns.
+          </p>
+          <div class="timeline-tags">
+            <span class="timeline-tag">MIT-BIH Dataset</span>
+            <span class="timeline-tag">Signal Processing</span>
+            <span class="timeline-tag">Bioinformatics</span>
+            <span class="timeline-tag">Wavelet Analysis</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ==========================================================================
+       ACHIEVEMENTS & COUNTERS SECTION
+       ========================================================================== -->
+  <section class="section-padding achievements-section" id="achievements">
+    <div class="container">
+      <div class="section-header reveal">
+        <span class="badge"><i class="fa-solid fa-trophy"></i> Milestones</span>
+        <h2>Achievements & Impact</h2>
+        <p>A statistical summary and highlight of key honors and recognition achieved.</p>
+      </div>
+      
+      <!-- Counters Grid -->
+      <div class="stats-grid reveal">
+        <div class="stat-card">
+          <div class="stat-number" data-count="15">0</div>
+          <div class="stat-label">Projects Completed</div>
+        </div>
+        <div class="stat-card">
+          <div class="stat-number" data-count="8">0</div>
+          <div class="stat-label">Hackathons Attended</div>
+        </div>
+        <div class="stat-card">
+          <div class="stat-number" data-count="2">0</div>
+          <div class="stat-label">Research Papers</div>
+        </div>
+        <div class="stat-card">
+          <div class="stat-number" data-count="5">0</div>
+          <div class="stat-label">Soft Skill Badges</div>
+        </div>
+      </div>
+      
+      <!-- Achievements Cards -->
+      <!-- Achievements Content Grid -->
+      <div class="achievements-content-grid">
+        <div class="achievements-list reveal-left">
+          <div class="achievement-card">
+            <div class="achievement-icon"><i class="fa-solid fa-medal"></i></div>
+            <div class="achievement-details">
+              <h4>Hackathon Participant</h4>
+              <p>Active designer and leader in multi-disciplinary engineering hackathons, solving real problems.</p>
+            </div>
+          </div>
+          
+          <div class="achievement-card">
+            <div class="achievement-icon"><i class="fa-solid fa-award"></i></div>
+            <div class="achievement-details">
+              <h4>Regional Project Selection</h4>
+              <p>Selected at regional forums to showcase technology-driven societal solutions.</p>
+            </div>
+          </div>
+          
+          <div class="achievement-card">
+            <div class="achievement-icon"><i class="fa-solid fa-file-invoice"></i></div>
+            <div class="achievement-details">
+              <h4>Research Paper Author</h4>
+              <p>Pioneering studies on early heart risk prediction models via computational ML models.</p>
+            </div>
+          </div>
+        </div>
+        
+        <div class="achievement-featured-card reveal-right">
+          <div class="featured-achievement-img-wrapper">
+            <img src="assets/achievement_event.jpg" alt="Yograj Sharma Certificate SRM IST" class="featured-achievement-img" onerror="this.parentElement.parentElement.style.display='none';">
+            <div class="featured-achievement-overlay">
+              <span class="featured-badge"><i class="fa-solid fa-award"></i> Workshop Milestone</span>
+              <h4>SRM IST National Workshop</h4>
+              <p>Receiving certificate of excellence at the Deep Learning in Human Health Analytics workshop.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ==========================================================================
+       EXTRACURRICULAR & PERFORMING ARTS SECTION
+       ========================================================================== -->
+  <section class="section-padding reveal">
+    <div class="container">
+      <div class="extra-grid">
+        
+        <!-- Extracurricular Column -->
+        <div class="reveal-left">
+          <h3 class="extra-column-title"><i class="fa-solid fa-guitar"></i> Performing Arts & Sports</h3>
+          <div class="extra-cards-list">
+            
+            <div class="extra-card">
+              <h4><i class="fa-solid fa-music"></i> Diploma Holder in Fine Arts & Dance</h4>
+              <p>Recognized academic diploma achievements in expressive dance performance and fine sketching arts, fostering creative conceptualization.</p>
+            </div>
+            
+            <div class="extra-card">
+              <h4><i class="fa-solid fa-drum"></i> Diploma Holder in Tabla</h4>
+              <p>Certified practitioner in classical percussive rhythms (Tabla), instilling precision, coordination, and appreciation for rich heritage.</p>
+            </div>
+            
+            <div class="extra-card">
+              <h4><i class="fa-solid fa-basketball"></i> Sports Excellence</h4>
+              <p>Acquired multiple sports certificates and high tournament ranks, demonstrating team synergy, tactical planning, and high stamina.</p>
+            </div>
+            
+          </div>
+        </div>
+        
+        <!-- Community & Soft Leadership Column -->
+        <div class="reveal-right">
+          <h3 class="extra-column-title"><i class="fa-solid fa-hands-holding-child"></i> Community & Leadership</h3>
+          <div class="extra-cards-list">
+            
+            <div class="extra-card">
+              <h4><i class="fa-solid fa-house-flood-water"></i> Flood Relief Connect</h4>
+              <p>Active volunteer planning and executing safety distribution programs in vulnerable flood-prone regions, demonstrating crisis adaptation.</p>
+            </div>
+            
+            <div class="extra-card">
+              <h4><i class="fa-solid fa-hand-holding-heart"></i> University Outreach</h4>
+              <p>Coordinating community-based literacy and sustainability programs representing the university's technical division.</p>
+            </div>
+            
+            <!-- Soft Skills and Languages Integrated -->
+            <div class="languages-box">
+              <h4><i class="fa-solid fa-language"></i> Languages Known</h4>
+              <div class="lang-badges">
+                <span class="lang-badge"><i class="fa-regular fa-comments"></i> English</span>
+                <span class="lang-badge"><i class="fa-regular fa-comments"></i> Hindi</span>
+                <span class="lang-badge"><i class="fa-regular fa-comments"></i> Assamese</span>
+              </div>
+            </div>
+            
+          </div>
+        </div>
+        
+      </div>
+    </div>
+  </section>
+
+  <!-- ==========================================================================
+       LEADERSHIP & SOFT SKILLS SECTION
+       ========================================================================== -->
+  <section class="section-padding timeline-section reveal">
+    <div class="container">
+      <div class="section-header">
+        <span class="badge"><i class="fa-solid fa-compass"></i> Interpersonal</span>
+        <h2>Leadership & Soft Skills</h2>
+        <p>Core professional attributes that drive team success, project governance, and structured problem solving.</p>
+      </div>
+      
+      <div class="about-details-grid">
+        <div class="about-info-card">
+          <h4><i class="fa-solid fa-crown text-accent"></i> Leadership</h4>
+          <p>Inspiring teams, delegating targets, and steering technical projects towards milestone success.</p>
+        </div>
+        
+        <div class="about-info-card">
+          <h4><i class="fa-solid fa-people-group text-accent"></i> Teamwork</h4>
+          <p>Collaborating seamlessly in diverse groups to merge multi-disciplinary skill sets into unified solutions.</p>
+        </div>
+        
+        <div class="about-info-card">
+          <h4><i class="fa-solid fa-comments text-accent"></i> Communication</h4>
+          <p>Presenting intricate technology ideas in simple, persuasive speech to stake-holders and team members.</p>
+        </div>
+        
+        <div class="about-info-card">
+          <h4><i class="fa-solid fa-puzzle-piece text-accent"></i> Problem Solving</h4>
+          <p>Applying first-principles computational logic to solve complex coding hurdles and logistical challenges.</p>
+        </div>
+        
+        <div class="about-info-card">
+          <h4><i class="fa-solid fa-wand-magic-sparkles text-accent"></i> Creativity</h4>
+          <p>Fusing artistic imagination with core logic to design sleek, user-centric interfaces and products.</p>
+        </div>
+        
+        <div class="about-info-card">
+          <h4><i class="fa-solid fa-sliders text-accent"></i> Adaptability</h4>
+          <p>Thriving dynamically in fast-shifting settings, adapting smoothly to new toolsets and tech-stacks.</p>
+        </div>
+        
+        <div class="about-info-card">
+          <h4><i class="fa-solid fa-brain text-accent"></i> Critical Thinking</h4>
+          <p>Evaluating systemic tradeoffs carefully to make reliable architecture and design selections.</p>
+        </div>
+        
+        <div class="about-info-card">
+          <h4><i class="fa-solid fa-list-check text-accent"></i> Project Management</h4>
+          <p>Organizing agile sprints, scoping task priorities, and executing on-time delivery cycles.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ==========================================================================
+       CONTACT SECTION
+       ========================================================================== -->
+  <section class="section-padding contact-section" id="contact">
+    <div class="container">
+      <div class="section-header reveal">
+        <span class="badge"><i class="fa-regular fa-paper-plane"></i> Get In Touch</span>
+        <h2>Contact Me</h2>
+        <p>Let's collaborate! Reach out for academic projects, developer hiring, or creative ideas.</p>
+      </div>
+      
+      <div class="contact-grid">
+        <!-- Contact details -->
+        <div class="reveal-left">
+          <div class="contact-info-list">
+            
+            <div class="contact-item">
+              <div class="contact-icon"><i class="fa-regular fa-envelope"></i></div>
+              <div class="contact-item-details">
+                <h4>Email Me</h4>
+                <p><a href="mailto:yograj.sharma@example.com">yograj.sharma@example.com</a></p>
+              </div>
+            </div>
+            
+            <div class="contact-item">
+              <div class="contact-icon"><i class="fa-solid fa-location-dot"></i></div>
+              <div class="contact-item-details">
+                <h4>Location</h4>
+                <p>SRM IST, Chennai, Tamil Nadu, India</p>
+              </div>
+            </div>
+            
+            <div class="contact-item">
+              <div class="contact-icon"><i class="fa-solid fa-school"></i></div>
+              <div class="contact-item-details">
+                <h4>Institution</h4>
+                <p>SRM Institute of Science and Technology</p>
+              </div>
+            </div>
+            
+          </div>
+          
+          <h4 class="social-title">Connect on Social Networks</h4>
+          <div class="social-links">
+            <a href="#" class="social-icon" target="_blank" title="GitHub"><i class="fa-brands fa-github"></i></a>
+            <a href="#" class="social-icon" target="_blank" title="LinkedIn"><i class="fa-brands fa-linkedin-in"></i></a>
+            <a href="#" class="social-icon" target="_blank" title="Instagram"><i class="fa-brands fa-instagram"></i></a>
+            <a href="mailto:yograj.sharma@example.com" class="social-icon" title="Email"><i class="fa-regular fa-envelope"></i></a>
+          </div>
+        </div>
+        
+        <!-- Contact Form Container -->
+        <div class="contact-form-container reveal-right">
+          <form id="portfolio-contact-form">
+            <div class="form-grid">
+              <div class="form-group">
+                <label for="form-name" class="form-label">Full Name</label>
+                <input type="text" id="form-name" class="form-input" placeholder="Your Name" required>
+              </div>
+              <div class="form-group">
+                <label for="form-email" class="form-label">Email Address</label>
+                <input type="email" id="form-email" class="form-input" placeholder="you@example.com" required>
+              </div>
+            </div>
+            <div class="form-group form-group-full" style="margin-bottom: 1.5rem;">
+              <label for="form-subject" class="form-label">Subject</label>
+              <input type="text" id="form-subject" class="form-input" placeholder="Project collaboration..." required>
+            </div>
+            <div class="form-group form-group-full" style="margin-bottom: 2rem;">
+              <label for="form-message" class="form-label">Message</label>
+              <textarea id="form-message" class="form-input" placeholder="Write your message here..." required></textarea>
+            </div>
+            <button type="submit" class="btn btn-primary form-btn" id="btn-submit">
+              Send Message <i class="fa-regular fa-paper-plane"></i>
+            </button>
+          </form>
+        </div>
+        
+      </div>
+    </div>
+  </section>
+
+  <!-- ==========================================================================
+       FOOTER
+       ========================================================================== -->
+  <footer class="footer">
+    <div class="container">
+      <p class="footer-quote">
+        "Technology and creativity together can transform ideas into impact."
+      </p>
+      <div class="footer-divider"></div>
+      <p class="footer-copy">
+        © 2026 Yograj Sharma | All Rights Reserved
+      </p>
+    </div>
+  </footer>
+
+  <!-- Toast Notification System -->
+  <div class="toast-msg" id="form-toast">
+    <i class="fa-regular fa-circle-check toast-icon"></i>
+    <span>Message sent successfully!</span>
+  </div>
+
+  <!-- Custom Interaction Script -->
+  <script src="script.js"></script>
+</body>
+</html>
